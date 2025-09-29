@@ -160,7 +160,7 @@
 
 
 
-                                       //##Task-10
+//##Task-10
 
 // Proqramlaşma şöbəsinin işçilərini saxlayan massiv yaradın.
 // Şirkətin 10 işçisi haqqında məlumat olan massiv verilib. development massivi yaradın,
@@ -196,7 +196,7 @@
 
 
 
-                                    //##Task-13
+//##Task-13
 
 // Rəqəmlər massivini parametr kimi qəbul edən və həmin massivdən konsola
 // bütün mənfi ədədləri çıxaran funksiya yazın.
@@ -209,9 +209,9 @@
 //         if (params[index]<0) {
 //             console.log(params[index]);
 //         }
-        
+
 //     }
-    
+
 // }
 
 // menfiEded(arr)
@@ -219,8 +219,8 @@
 
 
 
-                                            //##Task-14
-                                            
+//##Task-14
+
 // Rəqəmlər massivini parametr kimi qəbuil edən və həmin massivdəki bütün müsbət
 // ədədləri konsola çıxaran funksiya yazın.
 // İterasiya üçün anonim funksiyadan istifadə edin.
@@ -233,7 +233,214 @@
 //         if (params[index]>0) {
 //             console.log(params[index]);
 //         }
-        
+
 //     }
 // }
 // musbetEded(arr);
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+// ##Task-08
+// Massivin maksimal dəyərini tapın.
+// 10 rəqəmdən ibarət massiv yaradın.
+// Math.max funksiyasından istifadə edərək onların arasında maksimumu tapın.
+// spread-operatorundan istifadə edərək massiv arqumentlərini funksiyaya ötürün.
+
+
+// let numbers = [15, 72, 8, 99, 34, 56, 120, 43, 7, 88];
+
+// let maxNum = Math.max(...numbers);
+
+// console.log("Maksimal dəyər:", maxNum);
+
+
+
+// ##Task-09
+// Massivin bütün elementlərinin dəyərin ikiqat artırın.
+// 5 rəqəmdən ibarət massiv yaradın.
+// Orijinal massivin surətini çıxarın və yeni massivin bütün elementlərini ikiqat artırın.
+// Orijinal massivin dəyişmədiyini yoxlayın.
+
+
+// let arr = [3, 8, 12, 5, 7];
+
+// let newArr = [...arr];
+
+// for (let i = 0; i < newArr.length; i++) {
+//     newArr[i] = newArr[i] * 2;
+// }
+
+// console.log("Orijinal massiv:", arr);    
+// console.log("Yeni massiv:", newArr); 
+
+
+
+// ##Task-12
+// Tam ədədlər massivini qəbul edən, onu artan ardıcıllıqla sıralayan və sıralanmış massivi geri
+// qaytaran sortArray funksiyasını yazın.
+
+
+// let array = [1, 6, 34, 5, 1, -4, 54, 76, 23, 65, 3, 50, 45, 100, 2346, -52, 6545, 0, 45, 22];
+
+// function sortArray(params) {
+//     return params.sort((a, b) => a - b);
+// }
+
+// let sortedArray = sortArray(array);
+// console.log(sortedArray);
+
+
+// ##Task-13
+// Rəqəmlər massivini parametr kimi qəbul edən və həmin massivdən konsola
+// bütün mənfi ədədləri çıxaran funksiya yazın.
+
+// ##Task-13
+// Rəqəmlər massivini parametr kimi qəbul edən və həmin massivdən konsola
+// bütün mənfi ədədləri çıxaran funksiya yazın.
+
+// let arr = [3, -5, 32, -45, -22, 87, 75];
+
+// function menfiEded(params) {
+//     return params.filter(num => num < 0);
+// }
+
+// console.log(menfiEded(arr));
+
+
+
+
+
+
+                                            //##Task-15
+
+// const names = ["Michael", "Trevor", "Franklin", "Lamar", "Jimmy"];
+
+// function printWithDashes(name) {
+//     console.log("-" + name + "-");
+// }
+
+
+// function printWithHearts(name) {
+//     console.log("<3<3<3<3 " + name + "<3<3<3<3 ");
+// }
+
+
+// function printWithIndex(name, index) {
+//     console.log(index + ": " + name);
+// }
+
+// names.forEach(printWithDashes);
+// names.forEach(printWithHearts);
+// names.forEach(printWithIndex);
+
+
+
+// ##Task-16
+// Kebab-case formatında mətni parametr kimi qəbul edən və onu UPPER_CASE mətninə
+//  çevirən kebabToUpper funksiyasını yazın.
+// INPUT: console.log(kebabToUpper('first-user'));
+// OUTPUT: FIRST_USER
+
+
+// function kebabToUpper(text) {
+//     return text.split('-').join('_').toUpperCase();
+// }
+
+
+// console.log(kebabToUpper('first-user'));
+
+
+
+
+// ##Task-17
+// Orijinal massivin elementlərindən ibarət yeni massiv yaradın.
+// Rəqəmlər massivi verilmişdir.
+// Aşağıdakı kimi dəyişdirilən orijinal massivin elementlərindən ibarət yeni massiv yaradın:
+
+// - mənfi ədədlər müsbət olublar;
+// - müsbət ədədlər ikiqat artırılıb.
+//   let numbers = [1, 5, -7, 3, -9, 4, -6, 2];
+
+// let numbers = [1, 5, -7, 3, -9, 4, -6, 2];
+
+// const newNumbers = numbers.map(x => x < 0 ? x* -1 : x * 2);
+
+
+// console.log(newNumbers);
+
+
+
+
+
+
+
+
+// ##Task-18
+// Mətnlər massivini parametr kimi qəbul edən və massivin ilk üç simvoldan
+//  ibarət elementini qaytaran funksiya yazın.
+
+
+// function firstThreeChars(arr) {
+//     return arr.map(str => str.slice(0, 3));
+// }
+
+// const words = ["Michael", "Trevor", "Franklin", "Lamar", "Jimmy"];
+// console.log(firstThreeChars(words)); 
+
+
+// ##Task-19
+// Adlar massivi verilib. A hərfi ilə başlayan orijinal massivdəki
+// elementlərdən ibarət yeni massiv yaradın.
+
+
+// const names = ["Amir", "Alex", "Malik", "Angela", "Trevor", "Anna"];
+
+// const nameFirstA = names.filter(name => name[0] === "A");
+
+// console.log(nameFirstA);
+
+
+
+// ##Task-20
+// addTax() funksiyası yaradın. Verilmiş ƏDV-siz qiymətlərlə olan
+// price massivini ona ötürün. addTax() funksiyasının köməyi ilə ƏDV ilə
+// qiymətlərin daxil olduğu massiv yaradın və onu konsola çıxarın. ƏDV 20% təşkil edir.
+
+// let price = [34, 76, 89, 34, 45, 54 ];
+
+// function addTax(prices) {
+//     return price.map(prices => prices * 1.2 );
+
+// }
+
+// let priceWithFaiz  = addTax(price);
+
+// console.log(priceWithFaiz);
+
+
+
+// ##Task-21
+// Rəqəmlər massivini parametr kimi qəbul edən və massivdə neçə tək və cüt ədədin
+// olması barədə məlumatı qaytaran countEvensAndOdds() funksiyasını yazın.
+// Numune: Funksiya «Massivdə 4 cüt və 2 tək ədəd var» formasında mesaj qaytarır.
+
+// let number = [22, 31, 28, 75, 56, 44];
+
+// function countEvensAndOdds(nums){
+//     count1 = nums.filter(num => num % 2 === 0).length;
+//     count2 = nums.filter(num=> num % 2 !== 0).length;
+//     return `Ededlerin sayi - Cüt: ${count1} Tek: ${count2}`;
+// }
+
+// console.log(countEvensAndOdds(number));
